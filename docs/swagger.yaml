@@ -1,0 +1,22 @@
+basePath: /
+host: localhost:9000
+info:
+  contact: {}
+  title: Мой API
+  version: "1.0"
+paths:
+  /about:
+    get:
+      responses:
+        "200":
+          description: sipmle ping-pong service, try to send request to /ping url
+          schema:
+            type: string
+  /ping:
+    get:
+      responses:
+        "200":
+          description: pong
+          schema:
+            type: string
+swagger: "2.0"
